@@ -5,13 +5,13 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='py3dbp',
-    version='1.1.2',
+    version='1.2.0',
     author="Juan Cho",
     author_email="juanperez@gmail.com",
     description="3D Bin Packing",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/enzoruiz/3dbinpacking",
+    url="https://github.com/wusem/3dbinpacking",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
