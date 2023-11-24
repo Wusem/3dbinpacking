@@ -201,7 +201,7 @@ class Bin:
                         p += 1
         
     def string(self):
-        return "%s(%sx%sx%s, max_weight:%s) vol(%s) item_number(%s) filling_ratio(%s)" % (
+        return "%s\t(%sx%sx%s, max_weight:%s) vol(%s) item_number(%s) filling_ratio(%s)" % (
             self.size, self.length, self.width, self.height, self.capacity,
             self.get_volume(), self.total_items, self.get_filling_ratio())
 
@@ -686,14 +686,14 @@ class Packer:
             for unplaced_item in self.unplaced_items:
                 self.pack_to_bin(bin, unplaced_item)
                 
-            print("\n:::::::::::", bin.string())
+            print("\n___________", bin.string())
             print("FITTED ITEMS:")
             for item in bin.items:
-                print("====> ", item.string())
+                print("----> ", item.string())
             
             print("\nUNFITTED ITEMS:")
             for item in bin.unfitted_items:
-                print("====> ", item.string())
+                print("----> ", item.string())
             
             filling_ratio_list.append(bin.get_filling_ratio())
             
