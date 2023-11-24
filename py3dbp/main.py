@@ -1,6 +1,9 @@
 from .constants import RotationType, Axis
 from .auxiliary_methods import intersect, set_to_decimal
 
+DEFAULT_NUMBER_OF_DECIMALS = 3
+START_POSITION = [0, 0, 0]
+
 class Bin:
     def __init__(self, size, length, width, height, capacity):
         self.size = size 
